@@ -1,0 +1,56 @@
+body {
+    background-color: #f4f7f6;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card {
+    border: none;
+    border-radius: 0.75rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.05);
+}
+
+.btn {
+    transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+.btn:hover {
+    transform: translateY(-1px);
+}
+
+@media (min-width: 768px) {
+    .container-fluid {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+}
+
+@media (min-width: 992px) {
+    #sidebar {
+        min-height: 80vh;
+        border-right: 1px solid #dee2e6;
+    }
+    .main-content {
+        padding-left: 2rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .table th, .table td {
+        font-size: 0.85rem;
+    }
+    .table-striped td:nth-child(4), 
+    .table-striped td:nth-child(5) { 
+        display: none;
+    }
+    .table-striped th:nth-child(4), 
+    .table-striped th:nth-child(5) {
+        display: none;
+    }
+    .table-hover tbody tr:hover {
+        background-color: #e2f0ff;
+    }
+}
